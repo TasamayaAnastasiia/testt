@@ -2,7 +2,7 @@ import axios from "axios";
 
 const listOne = document.querySelector(".list-one");
 
-await axios.get(`https://books-backend.p.goit.global/books/top-books`)
+axios.get(`https://books-backend.p.goit.global/books/top-books`)
     .then(response => foo(response.data))
     .catch(error => console.log(error.message));
 
